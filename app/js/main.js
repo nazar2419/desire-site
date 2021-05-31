@@ -9,6 +9,12 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: 5
+    autoplay: true
+  });
+
+  let mixer = mixitup('.gallery__inner', {
+    load: {
+      filter: '.bedroom'
+    }
   });
 })
