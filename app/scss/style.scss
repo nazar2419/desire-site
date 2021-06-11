@@ -46,13 +46,14 @@
     position: relative;
     &::after{
       content: '';
-      position: relative;
+      position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       height: 2px;
+     
       border-radius: 1px;
-      border-color: rgba($title, .7);
+      background-color: rgba($title, .7);
 
     }
   }
@@ -608,6 +609,16 @@
     width: 100%;
     max-height: 1150px;
     height: 100%;
+  }
+
+  &.gallery-page{
+    .gallery__item img{
+      max-height: 1165px;
+    }
+    .gallery__item:nth-child(8){
+      grid-column: span 2;
+      grid-row: span 2;
+    }
   }
 }
 
