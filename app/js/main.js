@@ -11,10 +11,12 @@ $(function () {
     fade: true,
     autoplay: true
   });
-
-  let mixer = mixitup('.gallery__inner', {
-    load: {
-      filter: '.bedroom'
-    }
-  });
+  let gallery = document.querySelector('.gallery__inner')
+  if (gallery) {
+    let mixer = mixitup(gallery, {
+      load: {
+        filter: '.bedroom'
+      }
+    });
+  }
 })
