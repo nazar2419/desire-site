@@ -60,6 +60,25 @@ body{
 	}
 }
 
+.info-email {
+	font-weight: 600;
+	font-size: 14px;
+	color: $title;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+	&::before {
+		content: '';
+		background-image: url(../images/mail.svg);
+		position: absolute;
+		left: 0;
+		width: 16px;
+		top: 9px;
+		height: 12px;
+	}
+}
+
 
 
 

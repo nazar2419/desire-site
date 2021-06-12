@@ -11,6 +11,14 @@ $(function () {
     fade: true,
     autoplay: true
   });
+
+  $('.contact-slider').slick({
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    dots: true,
+    arrows: false,
+  });
+
   let gallery = document.querySelector('.gallery__inner')
   if (gallery) {
     let mixer = mixitup(gallery, {
