@@ -6,6 +6,7 @@ $default: #5A5A5A;
   font-weight: 700;
 }
 
+
 @function max($numbers...) {
  @return m#{a}x(#{$numbers});
 }
